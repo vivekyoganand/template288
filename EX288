@@ -1,0 +1,28 @@
+metadata:
+name: ex288-php-mysql
+namespace: indy    # Need to change as per exam.
+
+name: php:${PHP_VERSION}
+#name: php:7.2   # As per exam need to check this way .
+
+kind: ImageStreamTag
+#name: mysql:5.7
+name: mysql:5.7
+  
+- name: HELLO_AUDIENCE
+  value: ${HELLO_AUDIENCE}
+  image: ' '
+  livenessProbe:
+          
+- name: HELLO_AUDIENCE 
+  value: Engineer
+  
+  blank a value will be defaulted.
+  displayName: Application Hostname
+  name: APPLICATION_DOMAIN
+  value: " "
+  required: true
+  
+  
+          
+          
